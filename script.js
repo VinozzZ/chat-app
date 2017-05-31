@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var socketio = io.connect(sokcetURL);
+    var socketio = io.connect(socketURL);
     var msgHTML = '';
     var currentUserName = '';
     var usersDiv = $('#users');
