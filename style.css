@@ -1,0 +1,53 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.body-wrapper{
+    background: url('imgs/bg.jpg') no-repeat;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+    justify-items: center;
+    border: 1px solid red;
+    height: 100vh;
+    width: 70%;
+}
+
+ .log-in {
+     border: 1px solid red;
+     grid-column: 1;
+     grid-row:1;
+     display: grid;
+     justify-items: center;
+ }
+
+ #users {
+     border: 1px solid red;
+     width:90%;
+     grid-column: 1;
+     grid-row: 2;
+ }
+
+ .message-box-wrapper {
+     border: 1px solid red;
+     width: 100%;
+     grid-column: 2 / span 3;
+     grid-row: 1/ span 2;
+     margin-top: 1.5rem;
+     margin-right: 1.5rem;
+ }
+
+.message-box {
+     border: 1px solid red;
+     width: 100%;
+     height: 90%;
+}
+
+#submit-message-container {
+    width: 50%;
+    margin-left:60%;
+}

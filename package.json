@@ -12,5 +12,8 @@
     "socket.io"
   ],
   "author": "yingrong",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "socket.io": "^2.0.1"
+  }
 }
