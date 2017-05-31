@@ -39,8 +39,14 @@ var server = http.createServer((req, res)=>{
         });
     }else if (req.url == '/imgs/bg.jpg'){
         fs.readFile('/imgs/bg.jpg', (error, data)=>{
+            res.writeHead(200, {'content-type': 'image/jpg'});
             res.end(data);
-        })
+        });
+    }else if(req.url == '/config.js'){
+        fs.readFile('config.js', (error, data)=>{
+            res.writeHead(200, {'content-type': 'text/javascript'});
+            res.end(data);
+        });
     }
 });
 

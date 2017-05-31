@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    var socketio = io.connect('http://localhost:8080');
+    var socketio = io.connect(sokcetURL);
     var msgHTML = '';
     var currentUserName = '';
     var usersDiv = $('#users');
@@ -52,6 +52,8 @@ $(document).ready(function(){
         socketio.emit("typing", false);
     }
     $("#message").keypress((e)=>{
-        console.log(e.which);
+        if(e.which !== 13){
+
+        }
     });
 });
